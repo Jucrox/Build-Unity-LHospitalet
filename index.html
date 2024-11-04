@@ -14,7 +14,6 @@
   </head>
   <body>
     <div class="webgl-content">
-      <!-- <div class="webgl-content"></div> -->
       <div id="unityContainer" style="width: 720px; height: 1280px"></div>
       <div class="footer">
         <div class="webgl-logo"></div>
@@ -23,18 +22,4 @@
       </div>
     </div>
   </body>
-  <script>
-    document.addEventListener("DOMContentLoaded", function() {
-        var unityCanvas = document.getElementById("#unity-canvas"); // Reemplaza con el ID real si es diferente
-        if (unityCanvas.requestFullscreen) {
-            unityCanvas.requestFullscreen();
-        } else if (unityCanvas.mozRequestFullScreen) { // Firefox
-            unityCanvas.mozRequestFullScreen();
-        } else if (unityCanvas.webkitRequestFullscreen) { // Chrome, Safari, and Opera
-            unityCanvas.webkitRequestFullscreen();
-        } else if (unityCanvas.msRequestFullscreen) { // IE/Edge
-            unityCanvas.msRequestFullscreen();
-        }
-    });
- </script>
 </html>
